@@ -7,7 +7,7 @@
   "description": "Simulare conversație STB ca în iMessage.",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "avatar.png",
       "type": "image/png",
       "sizes": "192x192"
     },

@@ -1,16 +1,14 @@
 body {
   background: #000;
-  font-family: "San Francisco", Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
   height: 100vh;
 }
 
 .chat-app {
-  max-width: 420px;
-  margin: 0 auto;
-  background: #131313;
-  border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 6px 50px #1118;
   height: 100vh;
@@ -19,70 +17,62 @@ body {
   flex-direction: column;
 }
 
-.statusbar {
-  height: 22px;
-  background: #111;
-}
-
 .topbar {
-  height: 62px;
-  background: #222;
+  height: 85px;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   position: relative;
-  padding: 0 0 12px 16px;
-  border-bottom: 1px solid #222;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+  background-color: #2222226b;
 }
 
 .notif-dot {
   position: absolute;
-  left: 12px;
-  top: 8px;
+  left: 25px;
+  top: 20px;
   background: #1877f2;
   color: #fff;
-  font-size: 15px;
-  width: 25px;
-  height: 25px;
+  font-size: 14px;
+  width: 23px;
+  height: 23px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  box-shadow: 0 1px 6px #0004;
+  box-shadow: 0 1px 2px #0004;
   border: 2px solid #222;
   z-index: 1;
 }
 
 .avatar {
-  width: 44px;
-  height: 44px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   background: #353535;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 32px;
-  margin-right: 14px;
 }
 
-.avatar-icon {
-  font-size: 26px;
-  color: #e0e0e0;
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .number {
   color: #fff;
-  font-size: 22px;
-  font-weight: 600;
-  margin-left: 2px;
-  margin-bottom: 3px;
+  font-size: 14px;
 }
 
 .chat-container {
   display: flex;
   flex-direction: column;
+  margin: 0 15px;
   height: calc(100vh - 84px);
-  background: #131313;
 }
 
 #messages {
@@ -94,11 +84,9 @@ body {
 }
 
 .message {
-  max-width: 82%;
-  padding: 15px 15px 13px 15px;
+  max-width: 70%;
   margin-bottom: 12px;
-  font-size: 17px;
-  line-height: 1.37;
+  font-size: 19px;
   box-shadow: 0 2px 10px #0002;
   word-break: break-word;
 }
@@ -107,40 +95,59 @@ body {
   background: #3ee774;
   color: #fff;
   align-self: flex-end;
-  border-radius: 18px 18px 4px 18px;
-  min-width: 32px;
+  border-radius: 18px 18px 2px 18px;
+  min-width: 20px;
+  padding: 8px 13px 8px 13px;
   text-align: center;
-  font-weight: bold;
+  position: relative;
+  margin-right: 5px;
 }
+
+
 
 .message.received {
   background: #232323;
   color: #fff;
   align-self: flex-start;
-  border-radius: 18px 18px 18px 4px;
+  border-radius: 18px 18px 18px 2px;
+  padding: 10px 13px 10px 13px;
+}
+
+.form-container {
+  background-color: #000;
+  width: 100vw;
+  padding: 10px 0 20px 0;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #sms-form {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 95vw;
-  max-width: 420px;
+  width: 93vw;
   display: flex;
   gap: 8px;
   z-index: 2;
+  border: 1px solid #61616162;
+  border-radius: 50px;
 }
 
 #sms-input {
   flex: 1 1 auto;
-  border-radius: 20px;
   border: none;
   padding: 14px 20px;
   font-size: 19px;
+  font-weight: 300;
   outline: none;
-  background: #222;
   color: #fff;
+  background: transparent;
+}
+
+#sms-input::placeholder {
+  color: #616161a0;
 }
 
 #sms-form button {
@@ -148,13 +155,36 @@ body {
   color: white;
   border: none;
   border-radius: 18px;
-  font-size: 18px;
+  font-size: 17px;
   padding: 0 20px;
+  margin: 6px;
   cursor: pointer;
-  font-weight: bold;
   transition: background 0.2s;
 }
 
 #sms-form button:active {
   background: #145bba;
+}
+
+/* Scrollbar pentru Webkit (Safari, Chrome) */
+#messages::-webkit-scrollbar {
+  width: 3px;
+  background: transparent;
+}
+
+#messages::-webkit-scrollbar-thumb {
+  background: #616161; /* Gri închis, ca fundalul de la mesaje */
+  border-radius: 3px;
+  opacity: 0.6;
+}
+
+/* Ascunde săgețile din scrollbar pe macOS */
+#messages::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Pentru Firefox */
+#messages {
+  scrollbar-width: thin;
+  scrollbar-color: #616161 transparent;
 }

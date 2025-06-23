@@ -6,7 +6,12 @@
     <title>Simulare SMS Bilet STB</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
     <meta
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
@@ -19,21 +24,28 @@
       <div class="statusbar"></div>
       <div class="topbar">
         <span class="notif-dot">1</span>
-        <div class="avatar"><span class="avatar-icon">&#128100;</span></div>
-        <div class="number">7458</div>
+        <div class="avatar"><img src="avatar.png" alt="" /></div>
+        <div class="number">7458 &#8250;</div>
       </div>
       <div class="chat-container">
-        <div id="messages"></div>
+        <div id="messages">
+          <div class="message user">c</div>
+          <div class="message received">
+            Biletul pe liniile metropolitane a fost activat. Valabil pana in
+            23/06/2025 ora 19:57. Cost 0.65 EUR+TVA . Cod 2-1534087-4.
+            <br />Detalii 021-9391 <br />Calatorie placuta!
+          </div>
+        </div>
+      </div>
+      <div class="form-container">
         <form id="sms-form">
           <input
             type="text"
             id="sms-input"
-            placeholder="Text Message"
+            placeholder="Text Message • SMS"
             autocomplete="off"
-            maxlength="1"
-            value="c"
           />
-          <button type="submit">Trimite</button>
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>

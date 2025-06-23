@@ -22,7 +22,7 @@ function calculeazaExpirare() {
 function genereazaMesajBilet() {
   const cod = generateBiletCode();
   const dataExp = calculeazaExpirare();
-  return `Biletul pe liniile metropolitane a fost activat. Valabil pana in ${dataExp}. Cost 0.65 EUR+TVA . Cod ${cod}. Detalii 021-9391 Calatorie placuta!`;
+  return `Biletul pe liniile metropolitane a fost activat. Valabil pana in ${dataExp}. Cost 0.65 EUR+TVA . Cod ${cod}. <br/>Detalii 021-9391 <br/>Calatorie placuta!`;
 }
 
 function adaugaMesaj(text, tip) {
@@ -41,7 +41,7 @@ document.getElementById("sms-form").addEventListener("submit", function (e) {
   if (!textTrimis) return;
 
   adaugaMesaj(textTrimis, "user");
-  mesajInput.value = "c";
+  mesajInput.value = "";
 
   setTimeout(() => {
     adaugaMesaj(genereazaMesajBilet(), "received");
