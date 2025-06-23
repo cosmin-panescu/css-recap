@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulare SMS Bilet STB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-app">
+    <div class="statusbar"></div>
+    <div class="topbar">
+      <span class="notif-dot">1</span>
+      <div class="avatar"><span class="avatar-icon">&#128100;</span></div>
+      <div class="number">7458</div>
+    </div>
+    <div class="chat-container">
+      <div id="messages"></div>
+      <form id="sms-form">
+        <input type="text" id="sms-input" placeholder="Text Message" autocomplete="off" maxlength="1" value="c" />
+        <button type="submit">Trimite</button>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
