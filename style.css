@@ -95,14 +95,14 @@ body {
 }
 
 .message {
-  max-width: 75%;
+  max-width: 70%;
   margin-bottom: 12px;
-  font-size: 17px;
+  font-size: 16px;
   word-break: break-word;
 }
 
 .message.user {
-  background: #3ee774;
+  background: #4ae462;
   color: #fff;
   align-self: flex-end;
   border-radius: 18px 18px 4px 18px;
@@ -143,16 +143,22 @@ body {
 }
 
 #sms-form div {
-  font-size: 25px;
-  color: #777;
-  background: #61616162;
+  font-size: 35px;
+  color: #9b9b9b;
+  background: #1f1f21;
   padding: 10px;
   border-radius: 50%;
+  font-weight: 300;
   width: 20px;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#sms-form div span {
+  margin-top: -4px;
+  margin-right: -2px;
 }
 
 #sms-input {
@@ -169,7 +175,7 @@ body {
 }
 
 #sms-input::placeholder {
-  color: #8e8e8e;
+  color: #5b5b5b;
 }
 
 #sms-form button {
@@ -188,24 +194,32 @@ body {
   background: #145bba;
 }
 
-/* Scrollbar pentru Webkit (Safari, Chrome) */
+.message-divider {
+  text-align: center;
+  color: #a3a3a3;
+  font-size: 11px;
+  font-weight: 500;
+  margin: 5px 0 8px 0;
+  letter-spacing: 0.2px;
+  background: none;
+  border-radius: 12px;
+}
+
 #messages::-webkit-scrollbar {
   width: 3px;
   background: transparent;
 }
 
 #messages::-webkit-scrollbar-thumb {
-  background: #616161; /* Gri închis, ca fundalul de la mesaje */
+  background: #616161;
   border-radius: 3px;
   opacity: 0.6;
 }
 
-/* Ascunde săgețile din scrollbar pe macOS */
 #messages::-webkit-scrollbar-button {
   display: none;
 }
 
-/* Pentru Firefox */
 #messages {
   scrollbar-width: thin;
   scrollbar-color: #616161 transparent;

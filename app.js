@@ -72,3 +72,18 @@ document.getElementById("sms-form").addEventListener("submit", function (e) {
     adaugaMesaj(genereazaMesajBilet(), "received");
   }, 500);
 });
+
+function adaugaDividerTodayCurent() {
+  const now = new Date();
+  const h = pad(now.getHours()),
+    m = pad(now.getMinutes());
+  const divider = document.createElement("div");
+  divider.className = "message-divider";
+  divider.textContent = `Today ${h}:${m}`;
+  document.getElementById("messages").appendChild(divider);
+}
+
+// La încărcarea paginii, după ce DOM-ul e gata:
+window.addEventListener("DOMContentLoaded", function () {
+  adaugaDividerTodayCurent();
+});
