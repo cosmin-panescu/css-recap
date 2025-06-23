@@ -3,12 +3,37 @@ function pad(n) {
 }
 
 function generateBiletCode() {
-  const prefix = "2-";
-  const sufix = "-4";
-  const now = Date.now();
-  const random = Math.floor(Math.random() * 100000);
-  const codeNumber = ((now % 9000000) + random) % 9000000;
-  return `${prefix}${codeNumber}-${sufix[1]}`;
+  // 1. Determină ziua săptămânii
+  // getDay(): 0 - Duminică, 1 - Luni, ..., 6 - Sâmbătă
+  const weekday = new Date().getDay();
+  let prefix = "0";
+  switch (weekday) {
+    case 0:
+      prefix = "0";
+      break; // Duminică
+    case 1:
+      prefix = "1";
+      break; // Luni
+    case 2: // Marți
+    case 4: // Joi
+    case 6:
+      prefix = "2";
+      break; // Sâmbătă
+    case 3:
+      prefix = "3";
+      break; // Miercuri
+    case 5:
+      prefix = "5";
+      break; // Vineri
+  }
+
+  // 2. Numărul din mijloc: 7 cifre, prima cifră ≠ 0
+  let middle = Math.floor(Math.random() * 9000000) + 1000000; // 1000000..9999999
+
+  // 3. Ultima cifră: 0-9
+  let sufix = Math.floor(Math.random() * 10);
+
+  return `${prefix}-${middle}-${sufix}`;
 }
 
 function calculeazaExpirare() {
