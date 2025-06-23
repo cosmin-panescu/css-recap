@@ -95,9 +95,9 @@ body {
 }
 
 .message {
-  max-width: 70%;
+  max-width: 72%;
   margin-bottom: 12px;
-  font-size: 16px;
+  font-size: 16.5px;
   word-break: break-word;
 }
 
