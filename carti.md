@@ -19,3 +19,11 @@ https://www.libris.ro/ucenic-la-oameni-nevoitori-arhimandrit-grigorie-biz978-606
 https://www.libris.ro/31-de-cugetari-zilnice-despre-ingerul-pazitor-EGU978-606-550-500-0--p35886732.html#descriptionHead
 https://www.libris.ro/cuvinte-si-indemnuri-sfantul-arsenie-SOP978-973-136-850-4--p27401759.html
 https://www.libris.ro/viata-maicii-domnului-nicodim-mandita-aga973-9434-18-5.html
+https://www.bisericamavrogheni.ro/wp-content/uploads/2021/02/Makarios-Simonopetritul-Triodul-explicat.pdf
+https://www.egumenita.ro/produse/detalii/434-m%C4%83re%C8%9Bia-ortodoxiei-m%C4%83rturii-biblice-%C8%99i-patristice?gad_source=1&gad_campaignid=17347709426&gbraid=0AAAAABd3QITQ3Sd499cb3wXndRAzx_JTo&gclid=CjwKCAjw7MLDBhAuEiwAIeXGIR3_MdPX-RJrXnH0o1_AvGAEYrgHxvTXeSQgsYL1Mi11FEGx47vq_BoCJugQAvD_BwE
+https://www.elefant.ro/nicolae-steinhardt-marea-convertire_0289eb35-74df-4c34-9df4-0a6608064f61?srsltid=AfmBOoryq0VDa10UroJDKHE4oLUKM8Bo2qFa4AVxIivJxAkImPBSx5Md
+https://www.librariasophia.ro/literatura-crestina/poemul-iubirii-vesnice-8229.html
+https://www.egumenita.ro/produse/detalii/3737-adame-unde-esti-despre-pocainta?gad_source=1&gad_campaignid=17347709426&gbraid=0AAAAABd3QITQ3Sd499cb3wXndRAzx_JTo&gclid=CjwKCAjw7MLDBhAuEiwAIeXGIVMIK8Z1-6Cc-S-1Wf_-komQs7cPw0PYf_CBvW7q8zcKMAnECyyjqRoCaJQQAvD_BwE
+https://www.libris.ro/taina-suferintei-simeon-kraiopoulos-biz973-9492-89-8.html?gad_source=1&gad_campaignid=6955428922&gbraid=0AAAAAD2E83Giceu889jqoS1_CVNY95-00&gclid=CjwKCAjw7MLDBhAuEiwAIeXGIXmybXPzkXqc2KZfDUEwIRxpDOKxW0ZpiQLnmQqZ-W5N1sVFPmWl2BoCJxQQAvD_BwE
+https://www.elefant.ro/ghid-pascal_dbf0d025-0497-4121-aa28-d2541523ba62?srsltid=AfmBOopq8yHkYkpLzZoDXz5kMc_e6U7g469oVPPdkHkJqVAtn1s6yItD
+https://www.librariadelfin.ro/carte/despre-ierarhia-cereasca-editie-bilingva-dionisie-areopagitul--i108861?gad_source=1&gbraid=0AAAAADNag05WObFS-wyr_x9g7DaAL3JFk&gclid=CjwKCAjw7MLDBhAuEiwAIeXGIdST0Ejdo0J07TlvDcZZBvNPnAuVri4FTCtU23uMUHhHKOLomXzMEhoCY30QAvD_BwE
